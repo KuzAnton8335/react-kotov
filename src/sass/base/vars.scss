@@ -1,0 +1,15 @@
+:root {
+	--white-color: #fff;
+	--black-color: #000;
+	--accent-color: #f05a26;
+	--subblack-color: #191919;
+	--grey-color: #999999;
+	--font-famely: "Inter", sans-serif;
+	--base-font-size: 18px;
+}
+
+@mixin mq($size) {
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}

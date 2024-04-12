@@ -1,0 +1,64 @@
+.header {
+	padding-top: 24px;
+	padding-bottom: 68px;
+
+	&__container {
+		max-width: 1244px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logotyp {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn-burger {
+		padding-right: 20px;
+		cursor: pointer;
+	}
+
+	&__line {
+		display: block;
+		background: var(--accent-color);
+		width: 32px;
+		height: 4px;
+		&:nth-child(1) {
+			margin-bottom: 4px;
+		}
+		&:nth-child(3) {
+			margin-top: 4px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+
+	&__info-tel {
+		font-weight: 700;
+		line-height: 22px;
+		padding-right: 21px;
+	}
+
+	&__btn-phone {
+		box-sizing: border-box;
+		border: 2px solid var(--accent-color);
+		padding: 8px 16px;
+		color: var(--accent-color);
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 15px;
+		transition:
+			color 0.3s ease-in-out,
+			background 0.3s ease-in-out;
+
+		&:hover {
+			color: var(--white-color);
+			background: var(--accent-color);
+		}
+	}
+}
